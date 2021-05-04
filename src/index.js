@@ -1,17 +1,7 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
+//We are importing the App function(Which is a component) from the App.js file
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//Here we then tell our application to render the content of our app.js file(typically in the app function), inside the div with id root in the index.html file inside the public folder. This is the only html file a react project will have.
+ReactDOM.render(<App />, document.getElementById('root'));
