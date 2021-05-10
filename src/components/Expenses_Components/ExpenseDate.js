@@ -1,4 +1,5 @@
 import "./ExpenseDate.css";
+//Also this component receives the props as argument and then picked the date to format it.
 function ExpenseDate(props) {
   //Instead of having date outputted as a full string like this { props.date.toISOString() } to the screen, lets extract the month, year and date separately and make it loook nice!
   // { props.date.toISOString() /**Since the date stored in expenseDate variable isnt a string, I have to convert it into string for it to be outputed on the screen.**/ /**I can also run normal js codes inside this brackets, like add numbers, use js built in functions etc, the result will automatically fill this space*/}
